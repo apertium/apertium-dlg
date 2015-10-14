@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+dir=@libdir@/apertium/apertium-dlg
+srcdir=@datarootdir@/apertium/apertium-dlg
+
+Name: apertium-dlg
+Description: Finite-state morphological transducer and constraint grammar for dlg 
+Version: @VERSION@
+
