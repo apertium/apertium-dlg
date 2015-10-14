@@ -7,8 +7,8 @@ Multichar_Symbols
 %<n%>          ! Noun
 %<pl%>         ! Plural
 
-%{L%}  ! л, т,
-%{A%}  ! а, о,
+%{L%}  ! л, т, н,
+%{A%}  ! а, о, э,
 %{D%}
 %{N%}  ! ы, у
 
@@ -17,7 +17,13 @@ Multichar_Symbols
 
 LEXICON Root
 
+Copula ;
+Conjunctions ;
+Determiners ;
+Pronouns ;
 Nouns ;
+Adjectives ;
+Verbs ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -29,23 +35,31 @@ LEXICON CLITICS-NO-COP
 LEXICON CLITICS-INCL-COP 
 
 CLIT-COP ;
+ # ;
 
 LEXICON CLIT-COP
 
 %+ер%<cop%>%<aor%>: V-PERS-S1 ;
 
+# ;
+
 LEXICON CASES-COMMON
 
 %<par%>:%>%{D%}%{A%} CLITICS-NO-COP ;
-%<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
+%<dat%>:%>%{G%}%{A%}р CLITICS-NO-COP ;
 %<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
-%<com%>:%>%{M%}ен CLITICS-NO-COP ;
+%<ins%>:%>%{M%}%{A%}н CLITICS-NO-COP ;
 
 LEXICON CASES
 
 CASES-COMMON ;
 %<nom%>: CLITICS-INCL-COP ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
+
+LEXICON CASES-ETC
+
+CASES ;
+! GENERAL-POSSESSIVE-ETC ;
 
 LEXICON POSSESSIVES
 
@@ -71,6 +85,15 @@ LEXICON N1
 %<n%>%<attr%>: # ;
 %<n%>: FULL-NOMINAL-INFLECTION ;
 
+LEXICON A6 
+
+%<adj%>:ой # ; ! Dir/LR
+%<adj%>:ай # ; 
+
+LEXICON PRON-PERS-MIN 
+
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мин # ; 
+
 LEXICON V-PERS-S1-NO3PERSON
 
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
@@ -87,6 +110,30 @@ V-PERS-S1-NO3PERSON ;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Copula 
+
+э%<cop%>%<aor%>: V-PERS-S1 ;
+э%<cop%>%<past%>:%>тэ V-PERS-S1 ;
+
+LEXICON Conjunctions 
+
+гытта:гытта # ; ! FIXME: postadv?
+
+LEXICON Pronouns 
+
+PRON-PERS-MIN ; ! "я"
+
+ким:ким # ; ! "кто"
+
+LEXICON Determiners 
+
+бу:бу # ;
+
+LEXICON Numerals
+
+биир:биир # ;
+икки:икки # ;
 
 LEXICON Nouns
 
@@ -106,14 +153,27 @@ LEXICON Nouns
 һайын:һайын N1 ; ! "лето"
 һулус:һулус N1 ; ! "звезда"
 ас:ас N1 ; ! "еда"
-өс:өс N! ; ! ""
+өс:өс N1 ; ! ""
+догот:догот N1 ; ! "друг"
+ый:ый N1 ; ! "месяц, луна"
+убай:убай N1 ; ! "брать"
+таба:таба N1 ; ! "олень"
+киһи:киһи N1 ; ! "человек"
+кэһии:кэһии N1 ; ! "подарок"
 
 буква:буква N1 ; ! "буква"
 телефон:телефон N1 ; ! "телефон"
 трактор:трактор N1 ; ! "трактор"
 
+дулгаан:дулгаан N1 ; ! ""
+
+LEXICON Adjectives 
+
+сельскай:сельск A6 ; ! ""
+детскай:детск A6 ; ! ""
 
 LEXICON Verbs 
 
 буол:буол # ; ! "быть"
 
+көр:көр # ; ! "видеть"
