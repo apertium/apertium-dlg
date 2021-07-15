@@ -17,7 +17,7 @@ Multichar_Symbols
 
 LEXICON Root
 
-Copula ;
+!Copula ; ! including this produces entries with empty surface form
 Conjunctions ;
 Determiners ;
 Pronouns ;

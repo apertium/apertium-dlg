@@ -1,0 +1,10 @@
+[ELNNwzZBb5L1#0] ^звукнор/звук<n><pl>\<nom\>/звук<n><pl>\<nom\>+ер\<cop\>\<aor\>\<p3\><pl>/звук<n><pl>\<nom\>+ер\<cop\>\<aor\>\<p3\>\<sg\>$
+[/ELNNwzZBb5L1]
+[Iq3X__BqSw3v#0] ^ага/ага<n>\<nom\>/ага<n>\<attr\>/ага<n>\<nom\>+ер\<cop\>\<aor\>\<p3\><pl>/ага<n>\<nom\>+ер\<cop\>\<aor\>\<p3\>\<sg\>$
+[/Iq3X__BqSw3v]
+[Ytz-LU3uMZbu#0] ^мин/мин\<prn\>\<pers\>\<p1\>\<sg\>\<nom\>$
+[/Ytz-LU3uMZbu]
+[mdjCmWU5rz8U#0] ^трактор/трактор<n>\<nom\>/трактор<n>\<attr\>/трактор<n>\<nom\>+ер\<cop\>\<aor\>\<p3\><pl>/трактор<n>\<nom\>+ер\<cop\>\<aor\>\<p3\>\<sg\>$
+[/mdjCmWU5rz8U]
+[wEk0Mk2DGy-3#0] ^Алексейдэ/Алексей\<np\>\<ant\>\<m\>\<par\>$
+[/wEk0Mk2DGy-3]
